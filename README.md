@@ -1,2 +1,74 @@
-# learning-flutter
-A collection of small Flutter examples showcasing custom widgets, counters, dialogs, sliders, progress indicators, image loading, and a factorial calculator. Ideal for learning Flutter basics and state management.
+# 📱 Flutter Examples Collection
+
+This repository contains a collection of small, independent Flutter mini-projects created for learning and experimenting with widgets, state management, UI components, and simple app logic.  
+Each example is organized in its own folder and includes its own `main.dart` file.
+
+---
+
+## 🚀 Projects Included
+
+### **1. Hello World Plus**
+A set of custom “Hello World” widgets demonstrating:
+- Stateless widgets  
+- Constructors with parameters  
+- Named constructors  
+- Dynamic widget generation using loops and lists  
+
+**Concepts:** basic widgets, constructors, layout (`Column`), mapping lists.
+
+---
+
+### **2. Image Viewer**
+A simple demo that:
+- Loads images from the Internet  
+- Uses `showDialog` to open a popup  
+- Converts URL strings into `Image.network()` widgets using `.map()`  
+
+**Concepts:** dialogs, async image loading, functional list creation, UI composition.
+
+---
+
+### **3. Basic Counter**
+A minimal counter example that increases a number when pressing a button.
+
+**Concepts:** `StatefulWidget`, `setState()`, buttons, UI updates.
+
+---
+
+### **4. Advanced Counter**
+A more complete counter app featuring:
+- Increment / decrement buttons  
+- A circular progress indicator  
+- A slider controlling the counter  
+- Conditional UI (special behavior for value 42)  
+
+**Concepts:** state updates, UI composition, slider usage, progress indicators, conditional rendering.
+
+---
+
+### **5. Factorial Calculator**
+A mini-calculator that:
+- Accepts user input via `TextField`  
+- Computes the factorial of a number using recursion  
+- Sends results back to the parent widget through a callback  
+
+**Concepts:** callbacks between widgets, recursion, text controllers, input handling.
+
+---
+
+## 🛠️ Requirements
+- Flutter SDK (latest stable recommended)
+- Dart SDK (included with Flutter)
+- A device or emulator to run the examples
+
+---
+
+## ▶️ How to Run an Example
+
+Navigate to any project folder:
+
+```sh
+cd counter_advanced
+flutter run
+
+
