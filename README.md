@@ -1,11 +1,11 @@
-# 📱 Flutter Examples Collection
+# Flutter Examples Collection
 
 This repository contains a collection of small, independent Flutter mini-projects created for learning and experimenting with widgets, state management, UI components, and simple app logic.  
 Each example is organized in its own folder and includes its own `main.dart` file.
 
 ---
 
-## 🚀 Projects Included
+## Projects Included
 
 ### **1. Hello World Plus**
 A set of custom “Hello World” widgets demonstrating:
@@ -46,14 +46,14 @@ A mini-calculator that:
 
 ---
 
-## 🛠️ Requirements
+## Requirements
 - Flutter SDK (latest stable recommended)
 - Dart SDK (included with Flutter)
 - A device or emulator to run the examples
 
 ---
 
-## ▶️ How to Run an Example
+## How to Run an Example
 
 Navigate to any project folder:
 
