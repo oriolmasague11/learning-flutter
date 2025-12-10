@@ -12,8 +12,18 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        appBar: AppBar(   //aixo li posa com un titul a la app
+          title: const Text("Hello World"),
+        ),
         body: Center(
-          child: HelloWorldPlus(Colors.blue, 1),
+          child: Column(  // aixo tho posa tot en una columna
+            children: [
+              HelloWorld(), 
+              HelloWorldPlus(Colors.blue, 1), 
+              HelloWorldPlus.withRedColor(2),
+              HelloWorldGenerator(10),
+            ],
+          )
         ),
       ),
     );
@@ -37,6 +47,10 @@ class HelloWorldPlus extends StatelessWidget {
 
   const HelloWorldPlus(this.color, this.number, {super.key});
 
+  const HelloWorldPlus.withRedColor(this.number, {Key? key}):
+    this.color = Colors.red, 
+    super(key: key);
+
   @override
   Widget build(BuildContext ctx) {
     return Text(
@@ -46,17 +60,32 @@ class HelloWorldPlus extends StatelessWidget {
   } 
 }
 
-class Counter extends StatefulWidget {
-  
-  @override 
-  CounterState createState() => CounterState(); 
+class HelloWorldGenerator extends StatelessWidget {
 
-}
+  final int size; 
 
-class CounterState extends State<Counter> {
+  HelloWorldGenerator(this.size, {super.key});
 
-  Widget build(BuildContext) {
-    return Text("HelloWorld"); 
+  @override
+  Widget build(BuildContext context) {
+
+    List<Widget> childList = []; 
+
+    for(int i = 0; i < size; i++) {
+      childList.add(
+        HelloWorldPlus(
+            Color.fromRGBO(
+              16 * i % 255, 
+              32 * i % 255, 
+              48 * i % 255, 
+              1.0)
+          , i+3)
+      );
+    }
+
+    return Column(
+      children: childList,
+    ); 
   }
 
 }
