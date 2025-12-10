@@ -14,8 +14,6 @@ A set of custom “Hello World” widgets demonstrating:
 - Named constructors  
 - Dynamic widget generation using loops and lists  
 
-**Concepts:** basic widgets, constructors, layout (`Column`), mapping lists.
-
 ---
 
 ### **2. Image Viewer**
@@ -24,14 +22,10 @@ A simple demo that:
 - Uses `showDialog` to open a popup  
 - Converts URL strings into `Image.network()` widgets using `.map()`  
 
-**Concepts:** dialogs, async image loading, functional list creation, UI composition.
-
 ---
 
 ### **3. Basic Counter**
 A minimal counter example that increases a number when pressing a button.
-
-**Concepts:** `StatefulWidget`, `setState()`, buttons, UI updates.
 
 ---
 
@@ -42,8 +36,6 @@ A more complete counter app featuring:
 - A slider controlling the counter  
 - Conditional UI (special behavior for value 42)  
 
-**Concepts:** state updates, UI composition, slider usage, progress indicators, conditional rendering.
-
 ---
 
 ### **5. Factorial Calculator**
@@ -51,8 +43,6 @@ A mini-calculator that:
 - Accepts user input via `TextField`  
 - Computes the factorial of a number using recursion  
 - Sends results back to the parent widget through a callback  
-
-**Concepts:** callbacks between widgets, recursion, text controllers, input handling.
 
 ---
 
